@@ -18,16 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Guide to Quantum Software Engineering
+email: quantumswe@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  Welcome to my github page. I love quantum physics, I have been reading about
+  it at least since middle school. After my phd in Quantum optics, I somehow
+  landed up in an applied ML research career. Struck by quantum fomo, I have decided
+  to learn about the latest in quantum computing from the perspective of a software
+  engineer and document my journey. I hope you find this guide useful and enjoyable.
+baseurl: "/quantum-software-engineer.github.io/" # the subpath of your site, e.g. /blog
+url: "https://quantum-software-engineer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: nirsd
+github_username:  niranjansd
 
 # Build settings
 theme: minima
