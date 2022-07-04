@@ -32,7 +32,7 @@ twitter_username: nirsd
 github_username:  niranjansd
 
 # Build settings
-theme: minima
+theme: jekyll-theme-leap-day
 plugins:
   - jekyll-feed
 
