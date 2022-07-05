@@ -1,8 +1,13 @@
 ---
-layout: post
+layout: item
 title:  "Probability Density and Basis Vectors"
-date:   2022-06-30 22:12:42 -0700
-categories: refresher probability
+updated:   2022-06-30 22:12:42 -0700
+categories: refresher, probability, basis
+# image: /images/kaka.jpg
+# brief: A loud, social forest-dwelling parrot with North and South Island subspecies 
+# status: Endangered
+# nz_status: Endemic
+# distribution: Forests and offshore islands throughout the country
 ---
 If you have dabbled in ML, you might be familiar with the probability distribution vector. 
 

@@ -22,20 +22,25 @@ title: Guide to Quantum Software Engineering
 email: quantumswe@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my github page. I love quantum physics, I have been reading about
-  it at least since middle school. After my phd in Quantum optics, I somehow
-  landed up in an applied ML research career. Struck by quantum fomo, I have decided
-  to learn about the latest in quantum computing from the perspective of a software
-  engineer and document my journey. I hope you find this guide useful and enjoyable.
+  it at least since middle school. After my PhD in Quantum optics, I somehow
+  landed up in an applied ML research career. Recently I got quantum fomo, so I
+  decided to learn about the latest in quantum computing from the perspective of
+  a software engineer and document my journey.
+  I hope you find this guide useful and enjoyable.
 baseurl: "/quantum-software-engineer.github.io/" # the subpath of your site, e.g. /blog
 url: "https://quantum-software-engineer.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nirsd
 github_username:  niranjansd
 
 # Build settings
-theme: jekyll-theme-leap-day
+# theme: jekyll-theme-leap-day
+theme: minima
 plugins:
   - jekyll-feed
-
+# feed:
+collections:
+  refresher:
+    output: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
