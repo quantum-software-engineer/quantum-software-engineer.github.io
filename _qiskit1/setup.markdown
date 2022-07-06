@@ -1,9 +1,9 @@
 ---
 layout: item
-title:  "Probability Density and Basis Vectors"
-updated:   2022-06-30 22:12:42 -0700
-categories: refresher, probability, basis
-pageurl: /quantum-software-engineer.github.io/refresher/probability/2022/06/30/probability-density-vectors.html
+title:  "Qiskit Setup"
+updated:   2022-07-02 13:12:42 -0700
+categories: qiskit, circuits
+pageurl: /quantum-software-engineer.github.io/qiskit/circuits/2022/07/02/qiskit-basic-circuits.html
 # image: /images/kaka.jpg
 # brief: A loud, social forest-dwelling parrot with North and South Island subspecies 
 # status: Endangered

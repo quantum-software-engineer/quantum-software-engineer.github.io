@@ -2,8 +2,21 @@
 layout: default
 title: Gallery
 ---
-<h1 class="gallery-header dark-blue">Chapter Index</h1>
+<!-- {% assign sorted_array = site.chapters %}
+{% for chapter in sorted_array %}
+    <div class="gallery-container">
+        <h2 class="gallery-header dark-blue">Refreshers: Python and Math</h2>
+        {% assign sorted_array = site.chapters.refresher | sort: "title" %}
+        {% for bird in sorted_array %}
+        <div class="gallery-item">
+            <p class="gallery-item__title">{{ bird.title}}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %} -->
+
 <div class="gallery-container">
+    <h2 class="gallery-header dark-blue">Refreshers: Python and Math</h2>
     {% assign sorted_array = site.refresher | sort: "title" %}
     {% for bird in sorted_array %}
       <div class="gallery-item">
@@ -13,14 +26,57 @@ title: Gallery
             {% endif %}
             <img class="gallery-item__image" src="{{ bird.image }}">
         </div> -->
-        <p class="gallery-item__title">{{ bird.title }}</p>
-        <p class="gallery-item__text">{{ bird.updated }}</p>
-        <!-- <a href="{{ bird.url }}">
-            <div class="gallery-item__link">
-                <span>Read More</span>
-                <img class="gallery-item__arrow" src="/images/arrow-white.svg">
-            </div>
-        </a> -->
+        <a href="{{bird.pageurl}}">{{bird.title}}</a>
+        <!-- <p class="gallery-item__title">{{ bird.title}}</p> -->
+    </div>
+    {% endfor %}
+</div>
+
+<div class="gallery-container">
+    <h2 class="gallery-header dark-blue">Quantum essentials</h2>
+    {% assign sorted_array = site.quantum | sort: "title" %}
+    {% for bird in sorted_array %}
+      <div class="gallery-item">
+        <!-- <div class="gallery-item__image-block">
+            {% if bird.status == "Endangered" %}
+            <span class="gallery-item__status"><span class="gallery-item__bullet"></span>{{ bird.status }}</span>
+            {% endif %}
+            <img class="gallery-item__image" src="{{ bird.image }}">
+        </div> -->
+        <a href="{{bird.pageurl}}">{{bird.title}}</a>
+        <!-- <p class="gallery-item__title">{{ bird.title}}</p> -->
+    </div>
+    {% endfor %}
+</div>
+
+<div class="gallery-container">
+    <h2 class="gallery-header dark-blue">Qiskit Basics</h2>
+    {% assign sorted_array = site.qiskit1 | sort: "title" %}
+    {% for bird in sorted_array %}
+      <div class="gallery-item">
+        <!-- <div class="gallery-item__image-block">
+            {% if bird.status == "Endangered" %}
+            <span class="gallery-item__status"><span class="gallery-item__bullet"></span>{{ bird.status }}</span>
+            {% endif %}
+            <img class="gallery-item__image" src="{{ bird.image }}">
+        </div> -->
+        <a href="{{bird.pageurl}}">{{ bird.title}}</a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="gallery-container">
+    <h2 class="gallery-header dark-blue">Qiskit Advanced</h2>
+    {% assign sorted_array = site.refresher | sort: "title" %}
+    {% for bird in sorted_array %}
+      <div class="gallery-item">
+        <!-- <div class="gallery-item__image-block">
+            {% if bird.status == "Endangered" %}
+            <span class="gallery-item__status"><span class="gallery-item__bullet"></span>{{ bird.status }}</span>
+            {% endif %}
+            <img class="gallery-item__image" src="{{ bird.image }}">
+        </div> -->
+        <a href="{{bird.pageurl}}">{{ bird.title}}</a>
     </div>
     {% endfor %}
 </div>

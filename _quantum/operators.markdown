@@ -1,9 +1,9 @@
 ---
 layout: item
-title:  "Probability Density and Basis Vectors"
-updated:   2022-06-30 22:12:42 -0700
-categories: refresher, probability, basis
-pageurl: /quantum-software-engineer.github.io/refresher/probability/2022/06/30/probability-density-vectors.html
+title:  "Quantum Operators"
+updated:   2022-07-01 03:12:42 -0700
+categories: quantum, operator
+pageurl: /quantum-software-engineer.github.io/quantum/measurement/2022/07/02/quantum-measurement.html
 # image: /images/kaka.jpg
 # brief: A loud, social forest-dwelling parrot with North and South Island subspecies 
 # status: Endangered

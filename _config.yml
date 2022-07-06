@@ -41,6 +41,12 @@ plugins:
 collections:
   refresher:
     output: true
+  quantum:
+    output: true
+  qiskit1:
+    output: true
+  # quantum:
+  #   output: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
