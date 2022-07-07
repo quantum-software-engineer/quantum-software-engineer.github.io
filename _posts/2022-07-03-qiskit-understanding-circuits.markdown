@@ -1,9 +1,13 @@
 ---
 layout: post
-title:  "Qiskit - Setup"
+title:  "Qiskit - Circuits"
 date:   2022-07-02 23:59:42 -0700
 categories: qiskit circuits
 ---
+So we built our first Qiskit circuit.
+Let us build something bigger and learn about compound gates.
+
+
 Finally, we get to the juicy coding stuff. In this post, I am going to explore Qiskit. Qiskit has by far the best documentation, especially for the basics of quantum computing. 
  - They have a full textbook which is absolutely fantastic. If you found my previous chapters interesting but want to learn more about it in a systematic way, highly recommend the textbook. The interplay of physics and mathematical text interspersed with coding blocks make it super engaging and 
  - Qiskit also has a youtube series. Honestly I found the series quite dull and unengaging. I personally don't really like seeing handwritten text on a youtube video, but if you like it, they cover a lot of physics there as well.

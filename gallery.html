@@ -4,77 +4,87 @@ title: Gallery
 ---
 <!-- {% assign sorted_array = site.chapters %}
 {% for chapter in sorted_array %}
-    <div class="gallery-container">
-        <h2 class="gallery-header dark-blue">Refreshers: Python and Math</h2>
+    <div class="chapter-container">
+        <h2 class="chapter-header dark-blue">Refreshers: Python and Math</h2>
         {% assign sorted_array = site.chapters.refresher | sort: "title" %}
         {% for bird in sorted_array %}
-        <div class="gallery-item">
-            <p class="gallery-item__title">{{ bird.title}}</p>
+        <div class="chapter-lesson">
+            <p class="chapter-lesson__title">{{ bird.title}}</p>
         </div>
         {% endfor %}
     </div>
 {% endfor %} -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
-<div class="gallery-container">
-    <h2 class="gallery-header dark-blue">Refreshers: Python and Math</h2>
+<div class="row">
+    <div class="col" style="border:1px solid black">
+        <div class="chapter">
+            <div class="chapter-image" style="display:inline-block;vertical-align:top">
+                <!-- <img src="images/python.png"/> -->
+                <img src="images/python.png" width="100" height="100" style="margin:10px 10px 10px 10px">
+            </div>
+            <div class="chapter-lessons", style="display:inline-block;vertical-align:top">
+                <!-- <div class="chapter-name dark-blue">Refreshers: Python and Math</div> -->
+                <h3 class="chapter-name dark-blue">Python and Math</h3>
+                {% assign sorted_array = site.refresher | sort: "title" %}
+                {% for bird in sorted_array %}
+                    <div class="chapter-lesson">
+                        <a href="{{bird.pageurl}}">{{bird.title}}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="chapter">
+            <div class="chapter-image" style="display:inline-block;vertical-align:top">
+                <img src="images/bloch_sphere.png" width="110" height="110" style="margin:10px 0px 10px 10px">
+            </div>
+            <div class="chapter-lessons", style="display:inline-block;vertical-align:top">
+                <!-- <div class="chapter-name dark-blue">Refreshers: Python and Math</div> -->
+                <h2 class="chapter-header dark-blue">Quantum Essentials</h2>
+                {% assign sorted_array = site.quantum | sort: "title" %}
+                {% for bird in sorted_array %}
+                    <div class="chapter-lesson">
+                        <a href="{{bird.pageurl}}">{{bird.title}}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="chapter">
+            <div class="chapter-image" style="display:inline-block;vertical-align:top">
+                <img src="images/bloch_sphere.png" width="110" height="110" style="margin:10px 0px 10px 10px">
+            </div>
+            <div class="chapter-lessons", style="display:inline-block;vertical-align:top">
+                <!-- <div class="chapter-name dark-blue">Refreshers: Python and Math</div> -->
+                <h2 class="chapter-header dark-blue">Qiskit Basics</h2>
+                {% assign sorted_array = site.qiskit1 | sort: "title" %}
+                {% for bird in sorted_array %}
+                    <div class="chapter-lesson">
+                        <a href="{{bird.pageurl}}">{{bird.title}}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="chapter-container">
+    <h2 class="chapter-header dark-blue">Qiskit Advanced</h2>
     {% assign sorted_array = site.refresher | sort: "title" %}
     {% for bird in sorted_array %}
-      <div class="gallery-item">
-        <!-- <div class="gallery-item__image-block">
+      <div class="chapter-lesson">
+        <!-- <div class="chapter-image-block">
             {% if bird.status == "Endangered" %}
-            <span class="gallery-item__status"><span class="gallery-item__bullet"></span>{{ bird.status }}</span>
+            <span class="chapter-lesson__status"><span class="chapter-lesson__bullet"></span>{{ bird.status }}</span>
             {% endif %}
-            <img class="gallery-item__image" src="{{ bird.image }}">
-        </div> -->
-        <a href="{{bird.pageurl}}">{{bird.title}}</a>
-        <!-- <p class="gallery-item__title">{{ bird.title}}</p> -->
-    </div>
-    {% endfor %}
-</div>
-
-<div class="gallery-container">
-    <h2 class="gallery-header dark-blue">Quantum essentials</h2>
-    {% assign sorted_array = site.quantum | sort: "title" %}
-    {% for bird in sorted_array %}
-      <div class="gallery-item">
-        <!-- <div class="gallery-item__image-block">
-            {% if bird.status == "Endangered" %}
-            <span class="gallery-item__status"><span class="gallery-item__bullet"></span>{{ bird.status }}</span>
-            {% endif %}
-            <img class="gallery-item__image" src="{{ bird.image }}">
-        </div> -->
-        <a href="{{bird.pageurl}}">{{bird.title}}</a>
-        <!-- <p class="gallery-item__title">{{ bird.title}}</p> -->
-    </div>
-    {% endfor %}
-</div>
-
-<div class="gallery-container">
-    <h2 class="gallery-header dark-blue">Qiskit Basics</h2>
-    {% assign sorted_array = site.qiskit1 | sort: "title" %}
-    {% for bird in sorted_array %}
-      <div class="gallery-item">
-        <!-- <div class="gallery-item__image-block">
-            {% if bird.status == "Endangered" %}
-            <span class="gallery-item__status"><span class="gallery-item__bullet"></span>{{ bird.status }}</span>
-            {% endif %}
-            <img class="gallery-item__image" src="{{ bird.image }}">
-        </div> -->
-        <a href="{{bird.pageurl}}">{{ bird.title}}</a>
-    </div>
-    {% endfor %}
-</div>
-
-<div class="gallery-container">
-    <h2 class="gallery-header dark-blue">Qiskit Advanced</h2>
-    {% assign sorted_array = site.refresher | sort: "title" %}
-    {% for bird in sorted_array %}
-      <div class="gallery-item">
-        <!-- <div class="gallery-item__image-block">
-            {% if bird.status == "Endangered" %}
-            <span class="gallery-item__status"><span class="gallery-item__bullet"></span>{{ bird.status }}</span>
-            {% endif %}
-            <img class="gallery-item__image" src="{{ bird.image }}">
+            <img class="chapter-image" src="{{ bird.image }}">
         </div> -->
         <a href="{{bird.pageurl}}">{{ bird.title}}</a>
     </div>
